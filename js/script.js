@@ -13,10 +13,12 @@ window.onload = () => {
 function main() {
   const root = document.getElementById(`root`);
   const changeBtn = document.getElementById(`change-btn`);
+  const colorShow = document.getElementById(`colorShow`);
 
   changeBtn.addEventListener(`click`, function () {
     const bgColor = generateRGBColor();
-    root.style.backgroundColor = bgColor; 
+    root.style.backgroundColor = bgColor;
+    colorShow.innerHTML = bgColor;
   });
 }
 
@@ -25,8 +27,9 @@ function generateRGBColor() {
   const red = Math.floor(Math.random() * 255);
   const green = Math.floor(Math.random() * 255);
   const blue = Math.floor(Math.random() * 255);
+  const result = `rgb(${red}, ${green},${blue})`;
 
-  return `rgb(${red}, ${green},${blue})`;
+  return result;
 }
 
 //  Step-03: collect all necessary references.

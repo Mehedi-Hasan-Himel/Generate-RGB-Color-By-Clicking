@@ -42,7 +42,10 @@ button:hover {
   color: #000;
   border: 1px solid #000;
 }
-
+#colorShow{
+  font-size: 3em;
+  margin-bottom: 2em;
+}
 h1 {
   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
     1px 1px 0 #fff;
